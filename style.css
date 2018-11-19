@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html {
+	width:100%;
+	height:100%;
+}
+
+
+
+body{
+	margin:0;
+	padding:0;
+	height:100%;
+	font-size: 1.2rem;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	letter-spacing: 1.2;
+}
+
+.navbar {
+	padding: 1.2rem;
+
+}
+
+
+.navbar-nav li{
+	
+	display: inline-block;
+	padding:23px;
+	font-size: 1rem;
+}
+
+
+
+.container{
+	padding-top: 40px;
+}
+
+.container_item{
+	margin: 0 auto 0;
+}
+
+.landing-page-container{
+	width:100%;
+	min-height:100%;
+	height: 100vh;
+	overflow: hidden;
+	display: table;
+}
+
+.content-wrapper {
+	max-width: 1200px;
+	width:90%;
+	height:100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.ellipse-container{
+	width: 30rem;
+	height: 30rem;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: relative;
+	top: 3rem;
+}
+
+.ellipse-container .party{
+	position: relative;
+	top: 8.5rem;
+	left: 6rem;
+	right: 0;
+	margin: 0 auto;
+	text-transform: uppercase;
+	letter-spacing: 2rem;
+	font-size: 4rem;
+	font-weight: 200;
+	opacity: .7;
+}
+
+
+
+.ellipse {
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	border-style: solid;
+}
+
+.ellipse_outer--thin{
+	width: 100%;
+	height: 100%;
+	border-width: 1px;
+	border-color: rgba(9,56,62,.1);
+	animation: ellipseOrbit 45s ease-in-out infinite;
+}
+
+
+.ellipse_outer--thick{
+	width: 99%;
+	height: 99%;
+	border-color: 	#FF4500 transparent;
+	border-width: 2px;
+	transform: rotate(-45deg);
+	animation: ellipseRotate 15s ease-in-out infinite;
+}
+
+
+section.about{
+	padding:70px;
+	width:70%;
+	height:auto;
+	text-align: center;
+	margin: auto;
+    line-height: 1.9em;
+    font-size:18px;
+    background-color: rgb(51, 51, 51);
+}
+
+
+section.about h4{
+	margin:0;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size:28px;
+	color: rgb(255, 51, 51);
+	opacity: 0.9;
+}
+
+section.about p{
+	color:rgb(242, 242, 242) ;
+}
+
+
+
+ul.events {
+  margin-top: 90px;
+  padding: 20px;
+  background: #b30000;
+  opacity: 1.2;
+  text-align: center;
+  }
+
+li {
+	display: inline;
+  list-style-type: none;
+  padding: 0 0 24px;
+  overflow: hidden;
+}
+ 
+ ul.events p {
+ 	text-align: center;
+ 	color: #fff;
+ }
+
+ ul.events li a{
+ 	color: 	 #FFD700;
+ 	padding-top: 20px;
+ } 
+
+.date {
+  float: left;
+  width: 48px;
+  margin-right: 16px;
+  padding: 10px 4px;
+  background-color: rgb(51, 51, 51);
+  size:20px;
+  text-align: center;
+  color:  #FFD700;
+}
+
+.month {
+    display: block;
+    text-transform: uppercase;
+}
+    
+.day {
+
+      font-size: 1.25rem;
+      
+    }
+  
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
+
+footer {
+  margin:auto;
+  height: auto;
+  color:#000;
+  position: relative;
+  background-color: rgb(255, 255, 26);
+  opacity: 0.80;
+  padding:20px; 
+  text-align:center;
+  width:100%;
+  font-size:20px;
+  margin-top: 200px
+}
+
+@keyframes ellipseRotate {
+	0% {
+		transform: rotate(-45deg);
+	}
+	100%{
+		transform: rotate(-405deg);
+	}
+}
+
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+	
+}
+
+@media (max-width: 576px) {
+	
+}
